@@ -1,0 +1,91 @@
+.wishlist-conteiner{
+    padding: 50px 120px;
+    display: flex;
+    flex-direction: column;
+}
+.wishlist-header{
+    margin-bottom: 30px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.wishlist-content{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.wishlist-content table{
+    width: 100%;
+    border: 1px solid #d9d9e9;
+    font-size: .875rem;
+    position: relative;
+}
+
+.wishlist-content table th{
+    padding: 1em;
+    font-size: .75rem;
+    color: #71778e;
+    font-weight: 600;
+    vertical-align: middle;
+    border: 1px solid #edeef5;
+}
+.wishlist-content table tbody td .image{
+    width: 71.4px;
+    height: 100%;
+}
+.wishlist-content table tbody td{
+    font-size: .75rem;
+    color: #71778e;
+    font-weight: 600;
+    vertical-align: middle;
+    border: 1px solid #edeef5;
+    padding: 2rem;
+}
+.wishlist-content table .wishlist-cb{
+    width: 35px;
+    text-align: center;
+}
+.wishlist-content table .wishlist-remove{
+    width: 35px;
+    text-align: center;
+    padding: 1em .5em;
+}
+.wishlist-content table .wishlist-btns{
+    width: 250px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.wishlist-btns button{
+    position: relative;
+    font-size: .8125rem;
+    -webkit-box-flex: 1;
+    color: #fff;
+    background-color: #233a95;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    padding: 12px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 6px !important;
+    width: 80%;
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.wishlist-content table .wishlist-picture{
+    min-width: 100px;
+    max-width: 100%;
+    width: 100px;
+}
+.delete-wishlist{
+    font-size: 14px;
+    color: var(--black2);
+    font-weight: 600;
+    cursor: pointer;
+}
+.select select{
+    width: 300px;
+    padding: 18px 0;
+    border: 1px solid #71778e;
+    border-radius: 6px;
+}

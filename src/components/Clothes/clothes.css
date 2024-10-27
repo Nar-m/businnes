@@ -1,0 +1,367 @@
+.clothes-conteiner {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 100%;
+}
+
+.clothes-sliders {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 503.43px;
+}
+
+.clothes-sliders .slid-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.clothes-sliders .slid-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.clothes-sliders .slid-item .image {
+    width: 100%;
+    height: 100%;
+}
+
+.clothes-sliders .slid-item .image img {
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.slider-progress {
+    width: 100%;
+    height: 5px;
+    background-color: var(--border-light);
+    margin-top: 3px;
+    border-radius: 7px;
+}
+
+.slider-progress>div {
+    background-color: #ed174a;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.clothes-widgats {
+    padding: 15px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #f8efea;
+    height: 104px;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+
+.enty-title {
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: -.8px;
+    color: #00b853;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+}
+
+.banner-tubnail .image {
+    height: 100%;
+}
+
+.shop-now a button {
+    font-size: .75rem;
+    height: 2.125rem;
+    color: #fff;
+    background-color: #00b853;
+    border-color: #00b853;
+    padding: 0 1.25rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    border-radius: 4px;
+}
+
+.module-haeder .column .entry-title {
+    color: #233a95;
+    font-weight: 300;
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.module-haeder .column .entry-title span {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #ed174a;
+}
+
+.module-haeder .column .entry-description {
+    display: inline-block;
+    font-size: .9375rem;
+    width: 100%;
+    color: #9b9bb4;
+}
+
+.countDown {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.countDown .count-item {
+    width: 3.5rem;
+    height: 3.75rem;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2.3;
+    border-radius: 7px;
+    background-color: #ed174a;
+}
+
+.countDown span {
+    margin-left: .25rem;
+    margin-right: .25rem;
+    font-size: 1.125rem;
+}
+
+.our-services {
+    font-family: "Dosis", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.text-services {
+    margin-top: 13px;
+    font-size: 1.25rem;
+    color: #9b9bb4;
+}
+
+.carusel-servies {
+    max-width: 1250px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carusel-boxes {
+    width: 495%;
+    display: inline-flex;
+}
+
+.owl-carusel-items {
+    width: 100%;
+    padding: 12px 20px;
+}
+
+
+.owl-carusel-item .image {
+    width: 100%;
+}
+
+.doott {
+    width: 10px;
+    height: 10px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.clothes-filter {
+    width: 20%;
+
+}
+
+.selected-content {
+    width: 20%;
+    box-shadow: 0 0 5px #ebeaea;
+    z-index: 100;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 20;
+    font-weight: 600;
+}
+
+.title ul li {
+    padding: 4px;
+    font-family: "Inter", sans-serif;
+    margin: 0 12px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: var(--primary2);
+}
+
+.title ul li:hover {
+    background-color: #ebeaea;
+}
+
+.title ul li button {
+    color: #9b9bb4;
+}
+
+.select .select-header {
+    padding: 12px;
+}
+
+.filter-sort-select {
+    width: 20%;
+    box-shadow: 0 10px 10px #f6f4f3;
+}
+
+.product-filter h2 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 12px;
+    color: var(--primary2);
+}
+
+.product-filter .gender li .name {
+    font-size: 16px;
+    color: var(--primary2);
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.animated {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(200px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.product-filter input[type=checkbox] {
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #d3d4dd;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    outline: none;
+}
+
+.clothes-items.active {
+    opacity: 0;
+    transform: rotateY(180deg);
+    animation: fades 1s ease-in-out forwards;
+}
+
+@keyframes fades {
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+
+    }
+}
+
+.product-filter .circe {
+    height: 22px;
+    cursor: pointer;
+    width: 22px;
+    border-radius: 50%;
+}
+
+.product-filter input[type=checkbox]::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    display: none;
+
+}
+
+.product-filter input[type=checkbox]:checked {
+    background-color: #ed174a;
+}
+
+.product-filter input[type=checkbox]:checked::after {
+    display: block;
+}
+
+.product-filter ul li {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    white-space: nowrap;
+    color: #242424;
+}
+
+.arrow-sort {
+    color: #c0bebe;
+}
+
+.selected-content .selected-items {
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    color: darkblue;
+}
+
+.selected-content .selected-items:hover {
+    background-color: #ebeaea;
+}
+
+.selected-content .selected-items.active {
+    background-color: #ebeaea;
+    font-weight: bold;
+}
+
+.page-number {
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 35px;
+    text-align: center;
+    line-height: 2;
+    height: 35px;
+    border: 1px solid #c0bebe;
+    transition: background 0.3s ease-in-out;
+    margin: 0 6px;
+}
+.page-number.active{
+    background-color: #ed174a;
+    border: 1px solid #ed174a;
+    color: #fff;
+}
+.pages-btns{
+    color: #9b9bb4;
+}
+.pages-left.disabled{
+    opacity: .5;
+}
+.pages-right.disabled{
+    opacity: .5;
+}

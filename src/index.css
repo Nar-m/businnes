@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+:root {
+  --admin: '#181f4a';
+  --border-color: rgba(255, 255, 255, 0.15);
+  --searchIcons: #fff;
+  --bg-side: #0f1535;
+  --borders: #0f1535;
+  --searchPopup: #0f1535;
+  --bordersearch: #0f1535;
+  --gradient: 127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%;
+  --black: black;
+  --colorsvg: #fff;
+  --primary: #ccc;
+  --sideheader: #e6ecf0;
+  --color4: #fff;
+  --black2: #000;
+  --search: #d3d7dc;
+  --head: #494949;
+  --primary2: #020024;
+  --bgblue: #233a95;
+  --color1: #5d0732;
+  --color2: #62305c;
+  --color3: #229cc7;
+  --poopins: 'Poppins', sans-serif;
+  --white: white;
+  --red: red;
+  --blue: blue;
+  --green: green;
+  --yeloww: yellow;
+  --flex: flex;
+  --column: column;
+  --icenter: center;
+  --jcenter: center;
+  --center: center;
+  --right: right;
+  --img: url('https://codervent.com/maxton/demo/vertical-menu/assets/images/bg-themes/body-background-1.webp');
+  --left: left;
+  --p12: 12px;
+  --p10: 10px;
+  --p20: 20px;
+  --w14: 200px;
+  --hauto: auto;
+  --h14: 50px;
+  --border: rgba(0, 0, 0, 0.2);
+  --border-light: #edeef5;
+  --radius: 7px;
+  --m5: 10px 5px;
+  --none: none;
+  --wull: 100%;
+  --hfull: 100%;
+  --pointer: pointer;
+  --cartIcons: #dee2e6; 
+  --f18: 18px;
+  --w600: 600;
+  --w700: 700;
+  --w500: 500;
+  --head: #e6ecf0;
+  --bold: bold;
+  --sizeem: 2em;
+  --trans: 0.2s;
+  --dark: white;
+  --absolute: absolute;
+  --hovercolor: #a7acb1;
+  --relative: relative;
+}
+
+.dark-mode {
+  --bg-side: white;
+  --admin: white;
+  --img: url('');
+  --head: #000;
+  --colorsvg: black;
+  --gradient: "";
+  --cartIcons: rgba(13, 110, 253);
+  --dark: black;
+  --searchPopup: white;
+  --hovercolor: #a7acb1;
+  --sideheader: black;
+  --bordersearch: #0f1535;
+  --searchIcons: #0f1535;
+  --borders: #0f1535
+}
+
+.label-text {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: var(--primary2);
+}
+
+.title-contact {
+  font-size: 30px;
+  color: var(--primary2);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  width: var(--wull);
+  height: var(--hfull);
+  cursor: var(--pointer);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.error {
+  color: red;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+}
+
+.google {
+  border: 1px solid #e89496;
+  border-color: #e89496;
+  background: white;
+  border-radius: 50px;
+  color: #020024;
+}
+
+.google:hover {
+  border: 1px solid #e89496;
+  border-color: #e89496;
+  background: white;
+  color: #020024;
+}
+
+.facebook {
+  border: 1px solid #0866FF;
+  border-color: #0866FF;
+  background: white;
+  border-radius: 50px;
+  color: #020024;
+}
+
+.facebook:hover {
+  border: 1px solid #0866FF;
+  border-color: #0866FF;
+  background: white;
+  color: #020024;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-top: 3px solid transparent;
+  top: 30%;
+  right: 10px;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-radius: 50%;
+  border-right: 3px solid white;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

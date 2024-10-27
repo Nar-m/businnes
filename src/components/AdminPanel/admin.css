@@ -1,0 +1,21 @@
+.admin{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: var(--admin);
+    position: fixed;
+    background-attachment: fixed;
+    background-image: var(--img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+    left: 0;
+}
+#main{
+    margin-top: 100px;
+    margin-left: 248px;
+    color: #fff;
+}

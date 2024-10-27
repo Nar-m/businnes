@@ -1,0 +1,84 @@
+.search-product {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #f3f4f7;
+    border-radius: 3px;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    z-index: 9999999;
+}
+.empty-search-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.empty-search-conteiner .image{
+    margin-bottom: 15px;
+}
+.not-result{
+    font-size: 17px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    color: var(--black2);
+}
+.search-product ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    align-items: center;
+}
+
+.search-product .image {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    max-width: 42px;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+.search-product .search-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.search-product .search-content h1 {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+.search-product .search-content .price {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+
+.search-product .search-content .price>* {
+    display: block;
+    margin: 0;
+}
+
+.search-product .search-content .price del {
+    font-size: 85%;
+    color: #c2c2d3;
+}
+
+.search-product .search-content .price ins {
+    color: #d51243;
+    font-size: 17px;
+
+}

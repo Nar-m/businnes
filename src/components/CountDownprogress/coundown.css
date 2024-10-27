@@ -1,0 +1,28 @@
+.progress{
+    width: 100%;
+    margin-top: 20px;
+    height: 18px;
+    background-color: var(--border-light);
+    border-radius: 7px;
+}
+.day-progress{
+    background-color: #ed174a;
+    height: 100%;
+}
+.days-hours-minut-secundes > div{
+    margin: 0 5px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    color: #3e445a;
+    background-color: #edeef5;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .875rem;
+    width: 1.75rem;
+    height: 1.875rem;
+}

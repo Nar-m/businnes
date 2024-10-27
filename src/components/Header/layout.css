@@ -1,0 +1,215 @@
+.app-header {
+    background-color: var(--bgblue);
+    padding: 8px 0;
+    color: var(--color4);
+    font-size: var(--p12);
+    font-weight: var(--w500);
+}
+
+.header {
+    width: var(--wull);
+    height: auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .logo .image {
+    width: var(--w14);
+}
+
+.country-drop {
+    width: 160px;
+    min-height: 3.75rem;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+    text-align: left;
+    justify-content: flex-start !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+}
+
+.country-drop .location {
+    font-size: var(--p12) !important;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.country-drop .country-name {
+    font-size: 14px !important;
+    text-transform: capitalize;
+    font-weight: var(--w700) !important;
+    color: var(--bgblue) !important;
+}
+
+.search {
+    width: 100%;
+    height: 60px;
+    background: #f3f4f7;
+    padding: 16px 10px;
+    border-radius: var(--p10);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    ;
+}
+
+.search input {
+    background: transparent !important;
+    outline: none !important;
+    font-size: 14px !important;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+}
+
+.search .searchbtns {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 100;
+    min-width: 40px !important;
+    height: 40px !important;
+    color: var(--black2);
+    font-size: 25px;
+    border-radius: 50% !important;
+}
+
+.circle {
+    min-width: 50px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    font-size: var(--p20) !important;
+    color: var(--black2) !important;
+}
+
+.circle.succes {
+    border: 2px solid #dd3675 !important;
+    animation: borders 2s ease-in-out forwards;
+}
+
+.circle img{
+    border-radius: 50%;
+}
+
+@keyframes borders {
+    0% {
+        border-color: #ea2b0f;
+    }
+
+    100% {
+        border-color: #dd3675;
+    }
+}
+
+.cart-tab button {
+    background-color: #fff1ee !important;
+    position: relative;
+    color: #ea2b0f !important;
+}
+
+.count {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    border-radius: 50%;
+    background-color: #ea2b0f;
+    color: var(--color4);
+    width: 25px;
+    height: 25px;
+}
+
+.nav .allCatab {
+    color: var(--color4);
+    font-size: .9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    height: 3.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #2bbef9;
+    border-radius: 3.125rem;
+    font-family: "Dosis", sans-serif;
+    border-radius: 30px;
+}
+
+.nav .allCatab svg {
+    font-size: 20px;
+}
+
+.nav .allCatab svg:nth-child(1) {
+    margin-right: 10px;
+}
+
+.navbar ul li {
+    white-space: nowrap;
+}
+
+.navbar ul li a {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8) !important;
+    ;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a.active {
+    color: #2bbef9 !important;
+    background-color: #f0faff;
+}
+
+.navbar ul li a.active svg {
+    color: #2bbef9 !important;
+}
+
+.navbar ul li a svg {
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #f0faff;
+    color: #2bbef9 !important;
+}
+
+.navbar ul li a:hover svg {
+    color: #2bbef9 !important;
+}
+
+.navbar ul li .home svg {
+    font-size: 14px;
+    margin-left: 4px;
+    color: var(--black2);
+}
+
+.navbar ul li .shop svg {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.navbar ul li a svg {
+    color: #d5d5d8;
+}
+
+.description {
+    text-transform: uppercase;
+    white-space: nowrap;
+    height: 1.125rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: #71778e;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .625rem;
+    letter-spacing: 0;
+    background-color: #edeef5;
+    border: 1px solid #fff;
+    border-radius: 1.125rem;
+    bottom: -.5rem;
+    margin-left: 1.125rem;
+}

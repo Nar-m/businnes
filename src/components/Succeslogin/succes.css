@@ -1,0 +1,37 @@
+.succes-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vw;
+   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+.succes-conteiner .succes-content h1{
+    margin-bottom: 2rem;
+    font-size: 3em;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-weight: 600;
+}
+.succes-conteiner .succes-content p{
+    letter-spacing: 0.5px;
+    color: green;
+    font-size: 2em;
+    font-weight: 600;
+}
+.succes-conteiner .succes-content span{
+    color: green;
+    margin: 0 5px;
+}
+.succes-conteiner .succes-content .image{
+    width: 350px;
+    animation: position 1s ease-in-out infinite;
+}
+
+@keyframes position {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}

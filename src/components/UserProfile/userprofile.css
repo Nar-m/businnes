@@ -1,0 +1,55 @@
+.edit-profile .cart{
+    width: 390px;
+    padding: 1rem;
+    background-color: var(--bg-side);
+    border: 1px solid var(--borders);
+}
+
+.edit-profile  .image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(310deg, #ee0979, #ff6a00) !important;
+    padding: .25rem !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.data-username h5{
+    font-size: 1.75rem;
+    color: var(--sideheader);
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+}
+.edit-content{
+    background-color: var(--bg-side);
+    background-image: linear-gradient(var(--gradient));
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+    border: 2px solid var(--borders);
+}
+.form-title h5 {
+    font-weight: 700 !important;
+    color: var(--sideheader);
+    border-radius: 1rem;
+}
+.form-controls{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #d3d7dc;
+    appearance: none;
+    background-color: var(--bg-side);
+    border: 1px solid var(--borders);
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+}
+.pen-icons{
+    position: absolute;
+    font-size: 1.3rem;
+    right: 5px;
+    cursor: pointer;
+    color: #ee0979;
+
+}

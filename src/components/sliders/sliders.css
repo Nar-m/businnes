@@ -1,0 +1,48 @@
+.slider-conteiner {
+    width: 100%;
+    max-width: 871px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.slider-conteiner .slider-item {
+    width: 300%;
+    border-radius: 7px;
+    display: flex;
+}
+
+.slider-conteiner .slider-item .image {
+    width: 100%;
+    border-radius: 7px;
+    height: 100%;
+}
+
+.slider-conteiner .slider-item .image img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.doot-slider {
+    position: absolute;
+    bottom: 1.875rem;
+    display: flex;
+    left: 5rem;
+    z-index: 10;
+}
+
+.doot-slider .doot-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.5rem;
+    cursor: pointer;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(172, 172, 172);
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    margin: 0 6px;
+}
+
+.doot-slider .doot-item.active {
+    background-color: #202435;
+}

@@ -1,0 +1,127 @@
+.admin-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--bg-side);
+    width: 77px;
+    padding: 13px 17px;
+    white-space: nowrap;
+    height: 100%;
+    z-index: 12;
+    transition: ease-out 0.3s;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.044), 0 2px 6px 0 rgba(0, 0, 0, 0.049);
+}
+
+.admin-side.active {
+    width: 260px;
+}
+.admin-side .logo-name h5{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--sideheader);
+}
+.admin-side .logo-name{
+    display: none;
+}
+
+.admin-side.active .side-page-item li a .menu-title{
+    display: block;
+}
+.admin-side.active .logo-name{
+    display: block;
+}
+.admin-side .side-page-item {
+    display: none;
+}
+.admin-side.active .side-page-item{
+    display: block;
+}
+
+.search-popup {
+    background-color: var(--searchPopup);
+    position: absolute;
+    width: auto;
+    display: none;
+    height: auto;
+    top: 54px;
+    left: 0;
+    right: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem !important;
+    animation: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 animdropdown;
+}
+
+.search-popup.show{
+    display: block !important;
+}
+
+@keyframes animdropdown {
+    0% {
+        transform: translate3d(0, 6px, 0);
+        opacity: 0
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.side-page-item{
+    padding: 10px;
+}
+.side-page-item li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.side-page-item li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 15px;
+    color: #a7acb1;
+    outline-width: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-out;
+}
+.side-page-item li a:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--hovercolor);
+}
+.side-page-item li a .parent-icons{
+    line-height: 1;
+}
+.side-page-item li a .menu-title{
+    margin-left: 10px;
+    font-family: "poppins", sans-serif;
+    display: none;
+}
+.menu-arrow{
+    transition: all .3s ease-out;
+}
+.acardion-home{
+    transition: height .3s ease-out;
+    background-color: var( --bg-side);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    height: 0;
+}
+.acardion-home.active{
+    height: 99px;
+    padding: 10px !important;
+    overflow: visible;
+}

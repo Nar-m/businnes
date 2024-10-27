@@ -1,0 +1,16 @@
+.cart-number-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-number-information .number-content {
+    width: 380px;
+    background-color: brown;
+    
+}
+.cart-number-information .number-content > *{
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}

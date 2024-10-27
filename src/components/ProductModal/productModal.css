@@ -1,0 +1,112 @@
+.modal-product-conteiner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1043;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.modal-product-conteiner.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-product-conteiner .modal-content{
+    width: 70%;
+    padding: 50px 36px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.modal-product-conteiner .modal-content .product-modal-header{
+    border-bottom: 1px solid #e4e5ee;
+}
+.modal-product-conteiner .modal-content .product-modal-header h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .9375rem;
+}
+.product-meta-top{
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.product-brands{
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.modal-product-wrapper{
+    display: flex;
+    margin-top: 15px;
+}
+.picture-wrapper{
+    width: 460px;
+    height: 460px;
+    overflow: hidden;
+}
+.picture-wrapper.active{
+    opacity: 0;
+    visibility: hidden;
+    animation: 1s anim ease-in-out forwards;
+}
+@keyframes anim{
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.picture-wrapper .sliders{
+    position: absolute;
+    width: 100%;
+    transition: all 1s cubic-bezier(0.28, 0.12, 0.22, 1);
+    height: 100%;
+}
+.picture-wrapper .sliders .image{
+    width: 100%;
+    height: 100%;
+}
+.img-item{
+    width: 74px;
+    margin: 0 5px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid #edeef5;
+    transition: border-color 0.3s cubic-bezier(0.28, 0.12, 0.22, 1);
+    border-radius: 4px;
+}
+.img-item.active{
+    border-color: #233a95;
+}
+.close{
+    opacity: 1 !important;
+    background-color: #c2c2d3 !important;
+    color: #fff !important;
+    top: 0.625rem !important;
+    right: 0.625rem !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 38px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

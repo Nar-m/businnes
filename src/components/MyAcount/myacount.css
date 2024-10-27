@@ -1,0 +1,72 @@
+.my-acount{
+    background-color: #fff;
+    z-index: 100;
+    position: absolute;
+    right: 11%;
+    top: 52%;
+    padding: 10px 20px;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 5px  25px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40px);
+}
+.my-acount.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.my-acount::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 28px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    transform: rotate(45deg);
+
+}
+.my-acount .acount-header h3{
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+}
+.my-acount .image{
+    min-width: 50px !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    border: 2px solid #dd3675 !important;
+    font-size: var(--p20) !important;
+    color: var(--black2) !important;
+}
+.my-acount .image img{
+    border-radius: 50% !important;
+}
+.my-acount .acount-email span{
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+.my-acount .acount-list a li .circle{
+    min-width: 28px !important;
+    width: 28px !important;
+    height: 28px !important;
+}
+.my-acount .acount-list a{
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.my-acount .acount-list a li .circle i{
+    font-size: 14px;
+}
+.my-acount .acount-list a li{
+    color: #555;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    transition: 0.5s;
+}

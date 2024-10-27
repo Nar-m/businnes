@@ -1,0 +1,492 @@
+.detalis-conteiner {
+    background-color: #f7f8fd;
+    margin-bottom: -2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.detalis-conteiner .single-conteiner {
+    padding-right: 15px;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.location {
+    color: #3e445a !important;
+    cursor: pointer;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.location:hover {
+    text-decoration: underline;
+}
+
+.title {
+    color: #9b9bb4;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.product-location span {
+    margin: 15px 3px;
+}
+
+.klb-product {
+    color: #3e445a;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 22px;
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+.klb-product .cub {
+    width: 10px;
+    margin-top: 2px;
+    height: 10px;
+    border: 2px solid black;
+}
+
+.single-btns {
+    margin: 0 3px;
+}
+
+.single-wrapper {
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 1.25rem;
+    margin-top: 13px;
+}
+
+.single-wrapper .single-product-header {
+    width: 100%;
+}
+
+.single-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin-bottom: .9375rem;
+}
+
+.product-meta-top {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.product-rating {
+    display: flex;
+    -webkit-box-align: center;
+    font-size: 18px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.product-rating svg:last-child {
+    color: #c2c2d3;
+}
+
+.product-rating svg {
+    color: #ffcd00;
+}
+
+.count-rating {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: .5rem;
+    color: #71778e;
+    font-size: .7325rem;
+}
+
+.single-content .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.single-content .col {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.single-content .slider-wrapper.active {
+    opacity: 0;
+    visibility: hidden;
+    animation: fade 1s ease-in-out forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.single-content .viewport {
+    overflow: hidden;
+    width: 450px;
+    height: 457.784px;
+    position: relative;
+}
+
+.single-content .viewport .image {
+    width: 100%;
+    height: 100%;
+}
+
+.single-content .viewport .slide {
+    position: absolute;
+    width: 100%;
+    transition-duration: 0.5s;
+    height: 100%;
+}
+
+.single-content .viewport .image {
+    width: 100%;
+    height: 100%;
+}
+
+.single-dott-img {
+    width: 50px;
+    height: 100%;
+    border: 1px solid #edeef5;
+    padding: 3px;
+    margin-left: 4px;
+    border-radius: 4px;
+    transition: border-color 0.3s cubic-bezier(0.28, 0.12, 0.22, 1);
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.single-dott-img.active {
+    border: 1px solid #233a95;
+}
+
+.covid-19-info {
+    -webkit-box-orient: vertical;
+    display: inline-flex;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    max-width: 16.25rem;
+}
+
+.alert-message {
+    background-color: #ffeef2;
+    border-radius: 4px;
+    font-size: .75rem;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    color: #be143c;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+
+.icon-messages {
+    padding: 1.875rem;
+    width: 100%;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #f7f8fd;
+}
+
+.icon-messages ul li {
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    margin-top: 12px;
+    align-items: flex-start;
+}
+
+.icon-messages ul li .icons {
+    display: inline-flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.icon-messages ul li .message {
+    font-size: .75rem;
+}
+
+.description-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.product-meta {
+    margin-top: 1.25rem;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+.product-meta .stock {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    background-color: #e5f8ed;
+    border-radius: 1.875rem;
+    color: #00b853;
+}
+
+.product-descript {
+    margin-top: 1.25rem;
+    font-size: .9900rem;
+    color: #3e445a;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: wrap;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+.single-controls {
+    margin-top: 1.25rem;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.single-quantity {
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.quantity-btns {
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    background-color: #edeef5;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    color: #3e445a;
+    font-size: 20px;
+}
+.product-color{
+    color: #242425;
+    font-size: 17px;
+}
+.product-category{
+    color: #242425;
+    font-size: 17px;
+}
+.product-country{
+    color: #242425;
+    font-size: 17px;
+}
+
+.quantity {
+    width: 2.625rem;
+    height: 2.75rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    pointer-events: none;
+    font-size: 20px;
+    line-height: 2.625rem;
+}
+
+.single-btns-cart button {
+    position: relative;
+    font-size: .8125rem;
+    -webkit-box-flex: 1;
+    color: #fff;
+    background-color: #233a95;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    padding: 0 1.25rem;
+    -ms-flex: 1;
+    flex: 1;
+    height: 2.75rem;
+    margin-left: .9375rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 1.875rem !important;
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.single-btns-cart .go-to-cart{
+    position: relative;
+    font-size: .8125rem;
+    -webkit-box-flex: 1;
+    color: #233a95;
+    border: 1px solid #233a95;
+    background-color: transparent;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    padding: 0 1.25rem;
+    -ms-flex: 1;
+    flex: 1;
+    height: 2.75rem;
+    margin-left: .9375rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 1.875rem !important;
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.check{
+    font-size: 2em;
+    color: green;
+}
+.single-btns-cart button:hover {
+    opacity: 0.8;
+}
+
+.product-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.product-actions .add-to-wishlist {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 2.0625rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border: 1px solid #d9d9e9;
+    border-radius: 2.0625rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-align: center;
+    color: #71778e;
+}
+
+.compare {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Dosis", sans-serif;
+    font-size: .75rem;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #71778e;
+    text-decoration: none;
+    padding: 0;
+    height: auto;
+}
+
+.social-continer li {
+    margin: 0 3px;
+}
+
+.social-continer li a {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .9375rem;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50%;
+    border: 1px solid #e4e5ee;
+    -webkit-transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+
+.social-continer li .fasebook {
+    background-color: #3b5998;
+    color: #fff;
+    border-color: transparent;
+}
+
+.social-continer li .twitter {
+    background-color: #1da1f2;
+    color: #fff;
+    border-color: transparent;
+}
+
+.single-conteiner li .pinterest {
+    background-color: #e60023;
+    color: #fff;
+}
+
+.single-conteiner li .linkedin {
+    background-color: #0077b5;
+    color: #fff;
+    border-color: transparent;
+}
+.single-conteiner li .whatsapp{
+    background-color: #25d366;
+    color: #fff;
+    border-color: transparent;
+}
+.related-product{
+    margin-top: 5em;
+}
+.related-product .related-title{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: "Dosis", sans-serif;
+    font-size: 1.25rem;
+}

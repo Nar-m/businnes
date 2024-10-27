@@ -1,0 +1,190 @@
+.filter-title {
+    font-family: "Dosis", sans-serif;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-top: 1.25rem;
+}
+
+.filter-checkbox {
+    position: relative;
+    color: #71778e;
+}
+
+.filter-checkbox ul {
+    font-size: .875rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-checkbox ul li {
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.filter-checkbox ul li a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: .625rem;
+    display: inline-block;
+}
+
+.filter-checkbox ul li a label {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.filter-price {
+    font-weight: 600;
+    color: #71778e;
+}
+
+.befoore-shop-loop {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background-color: #f7f8fd;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.befoore-shop-loop a i {
+    font-size: 17px;
+}
+
+.befoore-shop-loop a:hover {
+    color: var(--black2);
+}
+
+.show-view-selector {
+    margin-right: auto;
+}
+
+.show-view-selector a {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: .875rem;
+    margin-left: .75rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.filter-sort {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filter-sort span {
+    font-size: .75rem;
+    color: #9b9bb4;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .load {
+    width: 35px;
+    height: 35px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #233a95;
+    border-left: 3px solid #233a95;
+    border-radius: 50%;
+    border-right: 3px solid #233a95;
+    animation: rotate 1s ease-in-out infinite;
+}
+
+.food-item.active {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fades 1s ease-in-out forwards;
+}
+
+@keyframes fades {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.multer {
+    padding: 8px;
+    width: 180px;
+    white-space: nowrap;
+    line-height: 25px;
+    background-color: #233a95;
+    opacity: 0.7;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    border-radius: 12px;
+    margin-left: 4px;
+}
+
+.multer span {
+    font-size: 17px;
+    cursor: pointer;
+}
